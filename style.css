@@ -18,6 +18,7 @@ body{
 .container{
     min-height: 100vh;
     padding: 20px;  
+    overflow: auto;
 }
 
 
@@ -155,6 +156,28 @@ body{
     display: none !important;
 }
 
+.reload {
+    padding: 10px;
+}
+
+.reload .reloadBtn{
+    padding: 15px 25px;
+    width: 100%;
+    background-color: tomato;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+.reload .reloadBtn:hover{
+    background-color: white;
+    color: blue;
+}
 
 
 
