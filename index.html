@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating To-Do-List using HTML, CSS and Javascript </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+        <section class="heading">
+            <p class="title">To-Do-List</p>
+            <p class="subtitle">Manage your schedule and track your events.</p>
+        </section>
+      <section class="task-manager">
+        <div class="search-box">
+          <form class="search-input">
+            <input type="text" placeholder="search task" name="task" autocomplete="off">
+            <svg class="reset"><use xlink: href="/image/symbol-defs.svg#icon-cross"></use></svg>
+          </form>
+        </div>
+        <div class="task-box">
+            <ul class="tasks">
+                <li>
+                    <span>Doing voice Training</span>
+                    <div class="icon-div"><svg class="delete"><use xlink: href="/image/symbol-defs.svg#icon-bin"></use></svg></div> 
+                </li>
+                <li>
+                    <span>Recording Songs</span>
+                    <div class="icon-div"><svg class="delete"><use xlink: href="/image/symbol-defs.svg#icon-bin"></use></svg></div>
+                </li>
+                <li>
+                    <span>Reading Novels</span>
+                    <div class="icon-div"><svg class="delete"><use xlink: href="/image/symbol-defs.svg#icon-bin"></use></svg></div>
+                </li>
+                <li>
+                    <span>learning Javascript</span>
+                    <div class="icon-div"><svg class="delete"><use xlink: href="/image/symbol-defs.svg#icon-bin"></use></svg></div>
+                </li>
+            </ul>
+
+            <form action="" class="add">
+                <input type="text" placeholder="Add Task" autocomplete="off" id="task">
+                <input type="submit" value="Add">
+            </form>
+        </div>
+        <div class="message">
+            <span class="messageSpan"></span>
+            <button class="clear">Clear All</button>
+        </div>
+      </section>
+    
+   </div> 
+
+   <script src="script2.js"></script>
+</body>
+</html>

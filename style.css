@@ -1,0 +1,181 @@
+:root{
+    ---box-shadow:0 3px 8px rgba(0, 0, 0, 0.24);
+}
+
+body{
+    background:rgb(86, 86, 234);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    padding: 20px;  
+}
+
+
+.heading {
+    text-align:center ;
+    padding:10px
+}
+
+.title {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.subtitle{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding:10px
+}
+
+.task-manager {
+    max-width: 450px;
+    margin: auto;
+}
+
+.search-box, .task-box, .message{
+    padding:20px 30px;
+    background: #fff;
+    margin: 20px 0;
+    box-shadow: var(---box-shadow);
+}
+
+.search-box, .search-input {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+
+.search-box input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+.reset{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    
+}
+
+.task-box .delete {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+
+}
+ .task-box .icon-div {
+    background-color: tomato;
+    height: 100%;
+    padding: 10px;
+    border-radius: 0px 2px 2px 2px;
+    cursor: pointer;
+
+} 
+
+.task-box .tasks{
+    margin: 10px 0;
+}
+
+.task-box li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    background-color:#f1f1f1;
+    margin: 20px 0;
+}
+
+.task-box span {
+    padding: 10px;
+}
+
+.task-box .add{
+    display: flex;
+    margin: 30px 0px 10px 0; /*top, right, bottom, left */
+}
+
+.task-box input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.task-box input[type="submit"]{
+    background-color: rgb(102, 216, 102);
+    padding: 10px 30px;
+    margin-left:20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message .messageSpan{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.message .clear {
+    border: 0;
+    background-color: blue !important;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
