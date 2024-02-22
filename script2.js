@@ -36,6 +36,44 @@ taskUL.addEventListener("click", function(event){
 // })
 
 
+
+//adding event to searchBar
+searchBar.addEventListener("keyup", function(event){
+    let term = searchBar.task.value.trim(); 
+    filterTerm(term);
+ })
+ 
+ function filterTerm(term){
+     Array.from(taskUL.children).filter((task)=> {
+         return !task.textContent.toLowerCase().includes(term);
+     })
+ 
+     .forEach((task)=>{
+         task.classList.add("hide");
+     })
+ 
+     Array.from(taskUL.children).filter(()=>{
+         return task.textContent.toLowerCase().includes(term).forEach((task)=>{
+             task.classList.remove("hide");
+         })
+     });
+ 
+ }
+ 
+ 
+ // RESET BUTTON
+ 
+ searchBar.addEventListener("click", function(event){
+    if( event.target.classList.contains("reset")){
+         searchBar.reset();
+     let term = searchBar.task.value.trim(); 
+    filterTerm(term);
+    }
+ })
+ 
+
+ 
+
 clearBtn.addEventListener("click", function(){
     let listElements = taskUL.querySelectorAll("li");    //while method will clear everything.
     listElements.forEach((element)=>{
@@ -52,39 +90,6 @@ function update(){
 update();
 
 
-//adding event to searchBar
-searchBar.addEventListener("keyup", function(event){
-   let term = searchBar.task.value.trim(); 
-   filterTerm(term);
-})
-
-function filterTerm(term){
-    Array.from(taskUL.children).filter((task)=> {
-        return !task.textContent.toLowerCase().includes(term);
-    })
-
-    .forEach((task)=>{
-        task.classList.add("hide");
-    })
-
-    Array.from(taskUL.children).filter(()=>{
-        return task.textContent.toLowerCase().includes(term).forEach((task)=>{
-            task.classList.remove("hide");
-        })
-    });
-
-}
-
-
-// RESET BUTTON
-
-searchBar.addEventListener("click", function(event){
-   if( event.target.classList.contains("reset")){
-        searchBar.reset();
-    let term = searchBar.task.value.trim(); 
-   filterTerm(term);
-   }
-})
 
 
 
